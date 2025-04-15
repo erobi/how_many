@@ -33,10 +33,11 @@ function calc()
     if(count > 0)
     {
         dates.forEach((date, _index, _arr) => {
-            document.getElementById('dates').innerHTML += '<p>' + date + '</p>';
+            document.getElementById('dates').innerHTML += '<p>' + date.toDateString() + '</p>';
         });
     }
 }
+
 
 function getDayOfWeek(date)
 {
